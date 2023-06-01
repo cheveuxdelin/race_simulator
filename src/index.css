@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #111;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+}
+
+.F1-image {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 400px;
+}
+
+.table-component {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+}
