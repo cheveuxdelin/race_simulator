@@ -13,14 +13,14 @@ interface TableProps {
 
 export default function Table({ results }: TableProps) {
   return (
-    <div className="table-component  bg-slate-700 p-4 rounded-xl">
+    <div className="table-component bg-[#111111] p-4 rounded-xl">
       <h2 className="text-white text-2xl text-center">Results</h2>
       <ul
         role="list"
         className="divide-y divide-gray-800 w-[600px] h-[500px] overflow-y-scroll"
       >
         {results.map((person) => (
-          <li key={person.name} className="flex justify-between gap-x-6 py-5">
+          <li key={person.name} className="flex justify-between gap-x-6 py-5 bg-[#111111]">
             <div className="flex gap-x-4">
               <p className="self-center text-white">#{person.podium}</p>
               <img

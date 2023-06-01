@@ -111,10 +111,12 @@ function App() {
 
   return (
     <>
-      <h1 className="text-white text-3xl p-5">Formula 1 Race Predictor</h1>
+      <h1 className="text-4xl mt-6 ml-6 font-bold tracking-tight text-white sm:text-6xl">
+              F1 Predictor
+            </h1>
       <img src={F1img} className="F1-image" />
 
-      <div className="w-[300px] h-[300px] flex flex-col bg-slate-700 rounded-xl p-5 box">
+      <div className="w-[300px] h-[300px] flex flex-col bg-[#111111] rounded-xl p-5 box">
         <h2 className="text-2xl mb-3 text-center text-white">Predict</h2>
         <form onSubmit={submitHandler} className="h-full space-y-3">
           <Select options={tracksList} label="Track" />
