@@ -53,8 +53,8 @@ const dummyResults = [
     },
 ];
 
-const dummyTrackList = ["a", "b", "c"];
-const dummyWeatherList = ["d", "e", "f"];
+const dummyTrackList = ["Silverstone", "Monaco", "RedBull Ring"];
+const dummyWeatherList = ["Dry", "Wet", "Warm"];
 
 function App() {
   function submitHandler(event: React.FormEvent<HTMLFormElement>) {
