@@ -6,87 +6,53 @@ import Button from "./components/Button";
 
 const dummyResults = [
   {
-    name: "Checo Perez",
-    podium: 1,
-    constructor: "Red Bull",
-    driver_confidence: 0.951691,
-    constructor_reliability: 0.844697,
-    image_url:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Checo Perez",
-    podium: 1,
-    constructor: "Red Bull",
-    driver_confidence: 0.951691,
-    constructor_reliability: 0.844697,
-    image_url:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Checo Perez",
-    podium: 1,
-    constructor: "Red Bull",
-    driver_confidence: 0.951691,
-    constructor_reliability: 0.844697,
-    image_url:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Checo Perez",
-    podium: 1,
-    constructor: "Red Bull",
-    driver_confidence: 0.951691,
-    constructor_reliability: 0.844697,
-    image_url:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Checo Perez",
-    podium: 1,
-    constructor: "Red Bull",
-    driver_confidence: 0.951691,
-    constructor_reliability: 0.844697,
-    image_url:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Checo Perez",
-    podium: 1,
-    constructor: "Red Bull",
-    driver_confidence: 0.951691,
-    constructor_reliability: 0.844697,
-    image_url:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Checo Perez",
-    podium: 1,
-    constructor: "Red Bull",
-    driver_confidence: 0.951691,
-    constructor_reliability: 0.844697,
-    image_url:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Checo Perez",
-    podium: 1,
-    constructor: "Red Bull",
-    driver_confidence: 0.951691,
-    constructor_reliability: 0.844697,
-    image_url:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Checo Perez",
-    podium: 1,
-    constructor: "Red Bull",
-    driver_confidence: 0.951691,
-    constructor_reliability: 0.844697,
-    image_url:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
+      name: "Checo Perez",
+      podium: 1,
+      constructor: "Red Bull",
+      driver_confidence: 0.951691,
+      constructor_reliability: 0.844697,
+      image_url:
+        "https://i.ibb.co/XYwkM0C/checo.png",
+    },
+    
+    {
+      name: "Lewis Hamilton",
+      podium: 1,
+      constructor: "Mercedez",
+      driver_confidence: 0.951691,
+      constructor_reliability: 0.844697,
+      image_url:
+        "https://i.ibb.co/bN8TtPJ/hamilton.png",
+    },
+    {
+      name: "Charles Leclerc",
+      podium: 1,
+      constructor: "Ferrari",
+      driver_confidence: 0.951691,
+      constructor_reliability: 0.844697,
+      image_url:
+        "https://i.ibb.co/b1Gc29k/leclerc.png",
+    },
+    {
+      name: "Max Verstappen",
+      podium: 1,
+      constructor: "Red Bull",
+      driver_confidence: 0.951691,
+      constructor_reliability: 0.844697,
+      image_url:
+        "https://i.ibb.co/wdLNLRr/verstappen.png",
+    },
+    {
+      name: "Carlos Sainz",
+      podium: 1,
+      constructor: "Ferrari",
+      driver_confidence: 0.951691,
+      constructor_reliability: 0.844697,
+      image_url:
+        "https://i.ibb.co/ZV0mZC8/sainz.png",
+    },
 ];
+
 const dummyTrackList = ["a", "b", "c"];
 const dummyWeatherList = ["d", "e", "f"];
 
@@ -111,21 +77,22 @@ function App() {
 
   return (
     <>
-      <h1 className="text-4xl mt-6 ml-6 font-bold tracking-tight text-white sm:text-6xl">
+      <h1 className="text-4xl mt-12 ml-12 font-bold tracking-tight text-white sm:text-6xl">
               F1 Predictor
             </h1>
       <img src={F1img} className="F1-image" />
 
-      <div className="w-[300px] h-[300px] flex flex-col bg-[#111111] rounded-xl p-5 box">
-        <h2 className="text-2xl mb-3 text-center text-white">Predict</h2>
-        <form onSubmit={submitHandler} className="h-full space-y-3">
+      <div className="w-[400px] h-[300px] flex flex-col bg-[#111111] rounded-xl p-5 box mb-4">
+        <h2 className="text-2xl mb-3 text-center text-white mr-14">Predict Race</h2>
+        <form onSubmit={submitHandler} className="h-full  mr-14">
           <Select options={tracksList} label="Track" />
           <Select options={weathersList} label="Location" />
           <Button text="Go" />
         </form>
       </div>
 
-      {results && <Table results={results} />}
+        {results && <Table results={results} />}
+
     </>
   );
 }

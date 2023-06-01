@@ -13,41 +13,63 @@ interface TableProps {
 
 export default function Table({ results }: TableProps) {
   return (
-    <div className="table-component bg-[#111111] p-4 rounded-xl">
-      <h2 className="text-white text-2xl text-center">Results</h2>
-      <ul
-        role="list"
-        className="divide-y divide-gray-800 w-[600px] h-[500px] overflow-y-scroll"
-      >
-        {results.map((person) => (
-          <li key={person.name} className="flex justify-between gap-x-6 py-5 bg-[#111111]">
-            <div className="flex gap-x-4">
-              <p className="self-center text-white">#{person.podium}</p>
-              <img
-                className="h-12 w-12 flex-none rounded-full bg-gray-800"
-                src={person.image_url}
-                alt=""
-              />
-              <div className="min-w-0 flex-auto">
-                <p className="text-sm font-semibold leading-6 text-white">
-                  {person.name}
-                </p>
-                <p className="mt-1 truncate text-xs leading-5 text-gray-400">
-                  {person.constructor}
-                </p>
-              </div>
-            </div>
-            <div className="hidden sm:flex sm:flex-col sm:items-end">
-              <p className="mt-1 text-xs leading-5 text-gray-400">
-                Constructor reliability: {person.constructor_reliability}
-              </p>
-              <p className="mt-1 text-xs leading-5 text-gray-400">
-                Driver confidence: {person.driver_confidence}
-              </p>
-            </div>
-          </li>
-        ))}
-      </ul>
+    <div className="table-component p-4 rounded-xl overflow-y-scroll">
+      <div className="sm:flex sm:items-center">
+        <div className="sm:flex-auto">
+          <h1 className="text-base font-semibold leading-6 text-gray-900">Users</h1>
+        </div>
+      </div>
+      <div className="mt-8 flow-root">
+        <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+            <table className="min-w-full divide-y divide-gray-300 w-[600px]  ">
+              <thead>
+                <tr>
+                  <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-white  sm:pl-0">
+                    Name
+                  </th>
+                  <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
+                    Podium
+                  </th>
+                  <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
+                    Confidence
+                  </th>
+                  <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
+                    Constructior Reliability
+                  </th> 
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200 bg-[#111111]">
+                {results.map((person) => (
+                  <tr key={person.name}>
+                    <td className="whitespace-nowrap py-5 pl-4 pr-3 text-sm sm:pl-0">
+                      <div className="flex items-center">
+                        <div className="h-11 w-11 flex-shrink-0">
+                          <img className="h-11 w-11 rounded-full bg-[#111111]" src={person.image_url} alt="" />
+                        </div>
+                        <div className="ml-4">
+                          <div className="font-medium text-white">{person.name}</div>
+                          <div className="mt-1 text-gray-500">{person.constructor}</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="whitespace-nowrap px-4 py-5 text-sm text-gray-500">
+                      <div className="text-white text-center">{person.podium}</div>
+                    </td>
+                    <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
+                      <div className="text-white text-center">{person.driver_confidence}</div>
+                    </td>
+                    <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
+                      <div className="text-white text-center">{person.constructor_reliability}</div>
+                    </td>
+                   
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
