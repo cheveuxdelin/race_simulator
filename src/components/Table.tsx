@@ -22,8 +22,8 @@ export default function Table({ results }: TableProps) {
       <div className="mt-8 flow-root">
         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-            <table className="min-w-full divide-y divide-gray-300 w-[600px]  ">
-              <thead>
+            <table className="min-w-full divide-y  w-[600px]  ">
+              <thead className="border-b border-white/50">
                 <tr>
                   <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-white  sm:pl-0">
                     Name
@@ -39,7 +39,7 @@ export default function Table({ results }: TableProps) {
                   </th> 
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200 bg-[#111111]">
+              <tbody className="divide-y divide-white/30 bg-[#111111]">
                 {results.map((person) => (
                   <tr key={person.name}>
                     <td className="whitespace-nowrap py-5 pl-4 pr-3 text-sm sm:pl-0">
@@ -62,7 +62,6 @@ export default function Table({ results }: TableProps) {
                     <td className="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
                       <div className="text-white text-center">{person.constructor_reliability}</div>
                     </td>
-                   
                   </tr>
                 ))}
               </tbody>
