@@ -86,7 +86,7 @@ function App() {
         <h2 className="text-2xl mb-3 text-center text-white mr-14">Predict Race</h2>
         <form onSubmit={submitHandler} className="h-full  mr-14">
           <Select options={tracksList} label="Track" />
-          <Select options={weathersList} label="Location" />
+          <Select options={weathersList} label="Weather" />
           <Button text="Go" />
         </form>
       </div>
