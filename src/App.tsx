@@ -5,7 +5,7 @@ import Table, { Person } from "./components/Table";
 import Button from "./components/Button";
 
 // Unsafe but serves demonstration purposes
-const serverURL = "http://127.0.0.1:5000";
+const serverURL = "http://140.84.163.252:5000";
 
 function App() {
 
