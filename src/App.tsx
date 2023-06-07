@@ -13,16 +13,15 @@ function App() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
 
-    const response = await fetch(`${serverURL}/predict`, {
-      method: "POST",
-      body: data
-    });
+    if (data.get("circuit") && data.get("weather")) {
+      const response = await fetch(`${serverURL}/predict`, {
+        method: "POST",
+        body: data
+      });
 
-    const responseJSON = await response.json();
-
-    console.log(responseJSON);
-
-    setResults([]);
+      const responseJSON: Person[] = await response.json();
+      setResults(responseJSON);
+    }
   }
 
   const [results, setResults] = React.useState<Person[]>();
