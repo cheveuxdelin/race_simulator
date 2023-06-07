@@ -1,10 +1,11 @@
+import randomColor from "randomcolor";
+
 export interface Person {
   name: string;
   podium: number;
   constructor: string;
   driver_confidence: number;
   constructor_reliability: number;
-  image_url: string;
 }
 
 interface TableProps {
@@ -31,7 +32,7 @@ export default function Table({ results }: TableProps) {
                   </th>
                   <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">
                     Constructior Reliability
-                  </th> 
+                  </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/30 bg-[#111111]">
@@ -39,8 +40,7 @@ export default function Table({ results }: TableProps) {
                   <tr key={person.name}>
                     <td className="whitespace-nowrap py-5 pl-4 pr-3 text-sm sm:pl-0">
                       <div className="flex items-center">
-                        <div className="h-11 w-11 flex-shrink-0">
-                          <img className="h-11 w-11 rounded-full bg-[#111111]" src={person.image_url} alt="" />
+                        <div className="h-11 w-11 flex-shrink-0 rounded-full" style={{ backgroundColor: randomColor() }}>
                         </div>
                         <div className="ml-4">
                           <div className="font-medium text-white">{person.name}</div>
