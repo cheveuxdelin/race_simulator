@@ -18,7 +18,9 @@ function App() {
       body: data
     });
 
-    console.log(response);
+    const responseJSON = await response.json();
+
+    console.log(responseJSON);
 
     setResults([]);
   }
